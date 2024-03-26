@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Vertical bar chart </title>
+        <style>
+            .graph-container{
+                position: relative;
+                width: 750px;
+                height: 500px;
+                border-left: 3px solid black; /* Oy Axis*/
+                border-bottom: 3px solid black; /*Ox Axis*/
+                margin: 100px;
+            }
+            .bar{
+                width: 50px;
+                position: absolute;
+                bottom: 0;
+
+            }
+            .bar1{ height: 300px; background-color: red; left: 10px }
+            .bar2{ height: 400px; background-color: plum; left: 100px}
+            .bar3{ height: 200px; background-color: blueviolet; left: 190px}
+            .bar4{ height: 450px; background-color: lightblue; left: 280px}
+            .bar5{ height: 100px; background-color: lightseagreen; left: 370px}
+            .bar6{ height: 250px; background-color: lightskyblue; left: 460px}
+            .bar7{ height: 200px; background-color: lightpink; left: 550px}
+            .bar8{ height: 100px; background-color: lightcoral; left: 640px}
+            
+            .label{
+                position: absolute;
+                width: 100%;
+                bottom: -40px;
+                text-align: center;
+                color: black;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="graph-container">
+            <div class="bar bar1"> 
+                <div class="label">300</div>
+            </div>
+            <div class="bar bar2">
+                <div class="label">400</div>
+            </div>
+            <div class="bar bar3">
+                <div class="label">200</div>
+            </div>
+            <div class="bar bar4">
+                <div class="label">450</div>
+            </div>
+            <div class="bar bar5">
+                <div class="label">100</div>
+            </div>
+            <div class="bar bar6">
+                <div class="label">250</div>
+            </div>
+            <div class="bar bar7">
+                <div class="label">200</div>
+            </div>
+            <div class="bar bar8">
+                <div class="label">100</div>
+            </div>
+        </div>
+    </body>
+</html>
+
