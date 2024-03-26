@@ -1,0 +1,71 @@
+/*space around boxes*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*position down*/
+nav#raiseup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*each box next to each other*/
+nav#raiseup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.1em solid #2e3436;
+}
+
+/*styling of the Categories(p) and Subcategories(a)*/
+nav#raiseup a,
+nav#raiseup p {
+  display:block;
+  background-color: lightcoral;
+  color: #2e3436;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 0.2em;
+  font-family: sans-serif;
+}
+
+/*change color when passing the mouse on the names*/
+nav#raiseup li:hover > a,
+nav#raiseup li:hover > p {
+  background-color: palevioletred;
+}
+
+/*positionate the boxes to look nice*/
+nav#raiseup > ul > li {
+  flex: 1;
+  position: relative;
+}
+
+/*shows the subcategories one above another*/
+nav#raiseup li > ul {
+  z-index: 1;
+  position: absolute;
+  left: 2em;
+  right: -2em;
+  display: none;
+}
+
+/* extends when touching the category*/
+nav#raiseup li:hover > ul {
+  display: block;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+
