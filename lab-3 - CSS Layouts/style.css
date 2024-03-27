@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: #363a3a;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(hv_building.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.nav-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+
+.logo-container a img {
+    margin-top: -40px;
+    width: 250px; /* Adjust as needed */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+     margin-top: 650px; 
+}
+.nav-links ul li {
+    padding: 8px 12px;
+}
+
+.nav-links ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.text-about-harvard{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 90px;
+    margin-left: 80px;
+}
+
+.left-text{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 850px;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+    display: block;
+    margin: auto;
+   /* transition: 0.5s;*/
+}
+
+
+/*.nav-links ul li:hover::after{
+    width: 100%;
+}*/
+
+.text-box{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container {
+    position: absolute;
+    right: 2%;
+    top: 2%; 
+    display: flex;
+}
+
+
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: #000000;
+    margin-left: 5px;
+    margin-top: 10px; 
+}
+
+.box-content{
+    color: #fff; 
+    text-align: center; 
+    font-size: 16px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.box-content .fas {
+    margin-right: 5px;
+    font-size: 20px; 
+}
+
+.box-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.menu-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+.line {
+    width: 20px; 
+    height: 2px; 
+    background-color: #fff; 
+    margin: 3px 0;
+}
+
+
+.text-people{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.body-text {
+    min-height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.right-text{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 450px;
+    margin-right: 50px;
+}
+
+.align-container {
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+.line-s{
+    border: none;
+    height: 1px;
+    background-color: #ffff;
+    margin-bottom: 100px;
+    margin: 85px auto;
+    width:100%;
+}
+
+.line-2{
+    border: none;
+    height: 4px;
+    background-color: #BDC3C7;
+    margin-bottom: 50px;
+    width:90%;
+    margin: 85px auto;
+}
+
+.img_students img{
+    width: 70%; 
+    height: auto; 
+    margin-left:70px;
+    margin-top: 150px;
+}
+
+.undergraduates{
+    font-size: 60px;
+    color: red;
+}
+
+.write-graduate-students{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.align-img-nr {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 150%;
+    width: 90%;
+    margin-top:-200px;
+    margin-bottom:50px;
+}
+
+.align-img-nr > * {
+    margin-right: -100px; 
+}
+
+.staff{
+    font-size: 60px;
+    color: red;
+}
+
+.write-staff{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.alumni{
+    font-size: 60px;
+    color: red;
+}
+
+.write-alumni{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.undergraduates, .staff, .alumni, .write-graduate-students, .write-staff, .write-alumni {
+    margin-bottom: 20px; 
+}
+
+.undergraduates, .staff, .alumni {
+    margin-bottom: 10px;
+}
+
+.write-graduate-students, .write-staff, .write-alumni {
+    margin-bottom: 20px; 
+}   
+
+.write-explore{
+    font-size:18px;
+    color:#ffff;
+
+}
+
+.write-components{
+    font-size: 18px;
+    color:#ffff;
+    margin-left: 120px;
+}
+
+.nav-components {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.nav-components ul {
+    list-style: none;
+    display: flex;
+    gap:200px;
+     margin-top: 2650px; 
+}
+.nav-components ul li {
+    padding: 8px 12px;
+}
+
+.nav-components ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-info-below{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.nav-info-below ul {
+    list-style: none;
+    display: flex;
+    gap:50px;
+    margin-top: 2700px; 
+}
+.nav-info-below ul li {
+    padding: 8px 12px;
+}
+
+.nav-info-below ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 15px;
+}
