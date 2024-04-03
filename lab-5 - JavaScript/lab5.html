@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<div id="slideshow-container">
+    <img id="slideshow-image" src="image-1.jpg" alt="Slideshow Image">
+</div>
+
+<div id="controls">
+    <button id="play-pause">Play</button>
+    <label><input type="checkbox" id="loop"> Loop</label>
+    <select id="change-time">
+        <option value="1000">1 Second</option>
+        <option value="2000">2 Seconds</option>
+        <option value="3000" selected>3 Seconds</option>
+        <option value="4000">4 Seconds</option>
+        <option value="5000">5 Seconds</option>
+    </select>
+</div>
+
+<script src="script.js"></script> 
+
+</body>
+</html>

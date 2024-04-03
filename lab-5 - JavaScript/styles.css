@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#slideshow-container {
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow-image {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#controls button, #controls select {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#controls label {
+    margin-left: 10px;
+}
